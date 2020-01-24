@@ -1,0 +1,43 @@
+package com.example.myfirst;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.net.Uri;
+import android.os.Bundle;
+import android.widget.MediaController;
+import android.widget.VideoView;
+
+public class Main2_2Activity extends AppCompatActivity {
+VideoView v1,v2,v3;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main2_2);
+
+        v1 = (VideoView) findViewById(R.id.videoView1);
+       // v2 = (VideoView) findViewById(R.id.videoView2);
+        //v3 = (VideoView) findViewById(R.id.videoView3);
+
+        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.arms3;
+        Uri uri = Uri.parse(videoPath);
+        v1.setVideoURI(uri);
+
+        MediaController mediaController = new MediaController(this);
+        v1.setMediaController(mediaController);
+        mediaController.setAnchorView(v1);
+
+        //MediaController mediaController=new MediaController(this);
+
+        //Uri uri1=Uri.parse("android.resourse://"+getPackageName()+"/"+R.raw.arms1);
+         //v1.setMediaController(mediaController);
+         //v1.setVideoURI(uri1);
+
+        //Uri uri2=Uri.parse("android.resourse://"+getPackageName()+"/"+R.raw.arms2);
+         //v2.setMediaController(mediaController);
+        //v2.setVideoURI(uri2);
+
+        //Uri uri3=Uri.parse("android.resourse://"+getPackageName()+"/"+R.raw.arms3);
+        //v3.setMediaController(mediaController);
+         //v3.setVideoURI(uri3);
+    }
+}

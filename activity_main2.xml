@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main2Activity"
+    android:background="@android:color/black">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+
+    <ImageView
+        android:layout_width="423dp"
+        android:layout_height="110dp"
+        android:src="@drawable/pic1" />
+
+    <Button
+        android:id="@+id/Button1"
+        android:layout_width="421dp"
+        android:layout_height="wrap_content"
+        android:text="ABS WorkOut"
+        android:background="@android:color/holo_red_light"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:src="@drawable/pic2" />
+
+    <Button
+        android:id="@+id/Button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ARMS WorkOut"
+        android:background="@android:color/holo_red_light"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:src="@drawable/pic3" />
+
+    <Button
+        android:id="@+id/Button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LEGS WorkOut"
+        android:background="@android:color/holo_red_light"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:src="@drawable/pic4" />
+
+    <Button
+        android:id="@+id/Button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GLUTES Workout"
+        android:background="@android:color/holo_red_light"/>
+    </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

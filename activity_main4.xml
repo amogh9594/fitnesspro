@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/holo_orange_dark"
+    android:fadingEdge="horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="423dp"
+        android:layout_height="155dp"
+        android:src="@drawable/bmi"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+
+    <!--<TextView
+        android:id="@+id/tv1"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="40dp"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:text="BMI"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:typeface="serif" />-->
+
+    <!-- Textview for calculator text
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Calculator"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />-->
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:text="Enter Weight" />
+
+    <EditText
+        android:id="@+id/ed2"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:text="Enter Height" />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check BMI"
+        android:textSize="25sp"/>
+
+
+</LinearLayout>
